@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "5769f194-1863-4d11-94e8-c4b173d276d7",
+		"name": "RetoBackEnd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10855887"
+	},
+	"item": [
+		{
+			"name": "saveclient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"fernando\",\r\n    \"lastName\": \"litano\",\r\n    \"typeDocument\": \"dni\",\r\n    \"numberDocument\": \"76666666\",\r\n    \"status\":\"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/X8SfCymmR0MtFTEP2uOqCWN8CQblTyTjJnQ0TYoWHVlazEuHqio23ieUBqUWKOal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"X8SfCymmR0MtFTEP2uOqCWN8CQblTyTjJnQ0TYoWHVlazEuHqio23ieUBqUWKOal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"a992776c-362e-4170-bf5f-185195dde79b\",\r\n    \"name\": \"fernando\",\r\n    \"lastName\": \"litano222\",\r\n    \"typeDocument\": \"dni\",\r\n    \"numberDocument\": \"76666666\",\r\n    \"status\":\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/X8SfCymmR0MtFTEP2uOqCWN8CQblTyTjJnQ0TYoWHVlazEuHqio23ieUBqUWKOal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"X8SfCymmR0MtFTEP2uOqCWN8CQblTyTjJnQ0TYoWHVlazEuHqio23ieUBqUWKOal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/X8SfCymmR0MtFTEP2uOqCWN8CQblTyTjJnQ0TYoWHVlazEuHqio23ieUBqUWKOal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"X8SfCymmR0MtFTEP2uOqCWN8CQblTyTjJnQ0TYoWHVlazEuHqio23ieUBqUWKOal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/status/B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"status",
+						"B"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
